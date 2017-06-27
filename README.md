@@ -24,7 +24,7 @@ You shouldn't have too much trouble finding it in any package manager.
 ## Instructions
 1. Clone this repository wherever required.
 
-2. Add ckey, csecret, akey, asecret in config.py. (If you don't have them yet then register your app in the twitter developer dashboard to receive them.).
+2. Add ckey, csecret, akey, asecret in config.py. (If you don't have them yet then register your app in the [twitter developer console](https://apps.twitter.com) to receive them. You will need a twitter account with a valid mobile attached to it to use the keys.)
 
 3. In twitstream.py you'll find a filter call with a track list in it. Change it to look for tweets with the specific filters you want.
 

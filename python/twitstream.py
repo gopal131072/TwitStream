@@ -5,19 +5,20 @@ import time
 import json
 import config
 
-file = open("location.txt","w",encoding="utf-8")
+# The file where we'll store all the locations we get from the twitter api.
+
+file = open("output/location.txt","w",encoding="utf-8")
 
 class listener(StreamListener):
 
     def on_data(self, data):
+        # The JSON return we get from the api.
         all_data = json.loads(data)
-
+        # We need only the location technically but since I was practicing with the twitter api I got the text of the tweet to print on the screen too.
         tweet = all_data["text"]
-
-        username = all_data["user"]["screen_name"]
-
+        # The location in standard json syntax.
         location = all_data["user"]["location"]
-
+        # Since location is customizable it can be left blank. Filtering those out.
         if location is not None:
             print((tweet + " : " + location + "\n"))
             file.write(location + "\n")

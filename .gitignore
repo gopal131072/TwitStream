@@ -11,9 +11,11 @@
 ## Output files.
 *.txt
 *.tar.*
+output/
 
 ## My actual config file
 config.py
 
 pkg/
 src/
+

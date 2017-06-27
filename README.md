@@ -54,7 +54,7 @@ As you can see the plot of rain in uk coincides for the most part with the plot 
 ## So what's the point of all this again?
 I think social media allows for a great deal of information gathering which could prove very beneficial.
 For example you could track people tweeting about fever/flu like symptoms to track the growth of a disease through a population.
-This is a pretty small project right now but with help and proper growth I think it could help provide a great deal of help in various fields and I'd appreciate any help in making it grow.
+This is a pretty small project right now because I'm playing around with the idea on a whim for now, but the idea has a lot of potential.
 
 Feel free to submit issues or PR's if you'd like to help out.
 

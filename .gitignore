@@ -1,5 +1,4 @@
 *.tar
-*.tar.*
 *.jar
 *.exe
 *.msi
@@ -8,6 +7,13 @@
 *.log
 *.log.*
 *.sig
+
+## Output files.
+*.txt
+*.tar.*
+
+## My actual config file
+config.py
 
 pkg/
 src/

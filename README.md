@@ -41,13 +41,13 @@ I've gotten an efficiency of about ~60% (Minor edit: Over a sample of 10k tweets
 
 ## Examples
 Here's a plot of news about rain being tweeted out on 27/9/17. (Sample size of about 500 tweets)
-![World plot](https://github.com/gopal131072/TwitStream/blob/master/rain-damp.png)
+![World plot](https://github.com/gopal131072/TwitStream/blob/master/images/rain-damp.png)
 
 Here's the part where most of the tweets were concentrated. In the southern part of the UK.
-![UK plot](https://github.com/gopal131072/TwitStream/blob/master/rain-damp-uk.png)
+![UK plot](https://github.com/gopal131072/TwitStream/blob/master/images/rain-damp-uk.png)
 
 And here's the weather report from the same day for the same time, courtesy of bing.
-![Weather report](https://github.com/gopal131072/TwitStream/blob/master/rain-uk.PNG)
+![Weather report](https://github.com/gopal131072/TwitStream/blob/master/images/rain-uk.PNG)
 
 As you can see the plot of rain in uk coincides for the most part with the plot of the weather report. There are a few anomolies which don't affect the overall similarity of the plots.
 

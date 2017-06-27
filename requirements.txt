@@ -1,0 +1,6 @@
+## You'll still need to install Basemap manually. Rest are included here.
+json
+tweepy
+matplotlib
+geopy
+numpy

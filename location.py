@@ -20,14 +20,12 @@ for addresses in address:
             current = geolocator.geocode(addresses,timeout=10)
             sleep(2)
         if current is not None:
-            file.write(str(current.latitude))
-            file.write(" , ")
             file.write(str(current.longitude))
+            file.write(",")
+            file.write(str(current.latitude))
             file.write("\n")
-            print(current.latitude, end='')
-            print(" , ",end = '')
-            print(current.longitude)
-        else:
-            file.write("Coordinates not found.\n")
+            print(current.longitude, end='')
+            print(", ",end = '')
+            print(current.latitude)
 
 file.close()

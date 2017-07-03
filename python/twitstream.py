@@ -7,8 +7,10 @@ import config
 
 # The file where we'll store all the locations we get from the twitter api.
 
-file = open("output/location.txt","w",encoding="utf-8")
+file = open("../output/location.txt","w",encoding="utf-8")
 
+# The file where we'll store all the tweets we get from the twitter api.
+newfile = open("../output/tweets.txt","w",encoding="utf-8")
 class listener(StreamListener):
 
     def on_data(self, data):
@@ -22,9 +24,11 @@ class listener(StreamListener):
         if location is not None:
             print((tweet + " : " + location + "\n"))
             file.write(location + "\n")
+            newfile.write(tweet + "\n")
         else:
             print((tweet + " : " + "No location supplied\n"))
             file.write("No location supplied\n")
+            newfile.write(tweet + "\n")
         return True
 
     def on_error(self, status):
@@ -34,6 +38,7 @@ auth = OAuthHandler(config.ckey, config.csecret)
 auth.set_access_token(config.atoken, config.asecret)
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["rain","damp"])
+twitterStream.filter(track=["#FakeNews"])
 
 file.close()
+newfile.close()

@@ -1,5 +1,5 @@
 # TwitStream
-Using twitter API to generate meaningful data and present it in a digestible format.
+Using twitter API to filter and parse through tweets, gather their location data and present said data in a digestible format.
 
 ## Dependencies
 1. [Tweepy](https://github.com/tweepy/tweepy)
@@ -41,20 +41,20 @@ I've gotten an efficiency of about ~60% (Minor edit: Over a sample of 10k tweets
 
 ## Examples
 Here's a plot of news about rain being tweeted out on 27/9/17. (Sample size of about 500 tweets)
-![World plot](https://github.com/gopal131072/TwitStream/blob/master/rain-damp.png)
+![World plot](https://github.com/gopal131072/TwitStream/blob/master/images/rain-damp.png)
 
-Here's the part where most of the tweets were concentrated. In the southern part of the UK.
-![UK plot](https://github.com/gopal131072/TwitStream/blob/master/rain-damp-uk.png)
+Here's the part where most of the tweets were concentrated. In the southern England.
+![UK plot](https://github.com/gopal131072/TwitStream/blob/master/images/rain-damp-uk.png)
 
 And here's the weather report from the same day for the same time, courtesy of bing.
-![Weather report](https://github.com/gopal131072/TwitStream/blob/master/rain-uk.PNG)
+![Weather report](https://github.com/gopal131072/TwitStream/blob/master/images/rain-uk.PNG)
 
-As you can see the plot of rain in uk coincides for the most part with the plot of the weather report. There are a few anomolies which don't affect the overall similarity of the plots.
+As you can see the plot of rain in the united kingdom coincides for the most part with the cloud gathering shown in the weather report. There are a few anomalies which is natural given my twitter filter, but the similarity still holds.
 
 ## So what's the point of all this again?
 I think social media allows for a great deal of information gathering which could prove very beneficial.
 For example you could track people tweeting about fever/flu like symptoms to track the growth of a disease through a population.
-This is a pretty small project right now because I'm playing around with the idea on a whim for now, but the idea has a lot of potential.
+This is a pretty small project right now because I'm playing around with the idea on a whim, but the idea itself has a lot of potential.
 
 Feel free to submit issues or PR's if you'd like to help out.
 
